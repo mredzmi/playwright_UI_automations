@@ -14,7 +14,12 @@ setWorldConstructor(CustomWorld);
 
 Before(async function (this: CustomWorld) {
   this.browser = await chromium.launch({ headless: true }); // Headless by default
-  const context = await this.browser.newContext();
+  const context = await this.browser.newContext({
+    recordVideo: {
+      dir: 'videos/',
+      size: { width: 1280, height: 720 },
+    },
+  });
   this.page = await context.newPage();
 });
 
