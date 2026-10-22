@@ -1,0 +1,30 @@
+{
+  "name": "ai-self-healing-framework",
+  "version": "1.0.0",
+  "description": "Generic UI test framework with AI self-healing using Playwright and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "self-healing",
+    "ai",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.5.0",
+    "playwright": "^1.48.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
